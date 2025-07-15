@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jew Experiment | $JewExp</title>
+  <title>Jew Experiment | $EXPJEW</title>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.js"></script>
   <style>
@@ -335,7 +335,7 @@
 
         <div class="card-body">
           <div class="form-group">
-            <label for="deposit">Enter $JewExp deposit (from 613M supply)</label>
+            <label for="deposit">Enter $EXPJEW deposit (from 613M supply)</label>
             <input type="number" id="deposit" min="1" max="613000000" placeholder="e.g., 613" />
           </div>
 
@@ -351,7 +351,7 @@
           <div class="log-container" id="log">
             <div class="log-entry">
               <span class="log-time">[Rebbe]</span>
-              <span class="log-message">"$JewExp initialized. May the odds be ever in your favor... or at least better than your bubbe’s stock picks."</span>
+              <span class="log-message">"$EXPJEW initialized. May the odds be ever in your favor... or at least better than your bubbe’s stock picks."</span>
             </div>
           </div>
         </div>
@@ -361,7 +361,7 @@
         Fee: 0.01 SOL → <code>Twitter @jew_Experiment</code>
       </div>
       <div class="footer">
-        <p>Deposit $JewExp for a chance to multiply! Winners get paid in SOL (or guilt).</p>
+        <p>Deposit $EXPJEW for a chance to multiply! Winners get paid in SOL (or guilt).</p>
       </div>
     </main>
   </div>
@@ -395,7 +395,7 @@
       };
 
       updateStatus(`Box sealed with a "Mazel Tov!"`, 'default');
-      log(`Deposited ${amount.toLocaleString()} $JewExp. Waiting for divine intervention...`, 'info');
+      log(`Deposited ${amount.toLocaleString()} $EXPJEW. Waiting for divine intervention...`, 'info');
     }
 
     function updateStatus(text, state = 'default') {
@@ -418,12 +418,12 @@
         box.status = 'collapsed';
 
         if (collapseOutcome) {
-          log(`💀 Your $JewExp got gribenes’d. Balance: 0. "Next year in Jerusalem?"`, 'error');
+          log(`💀 Your $EXPJEW got gribenes’d. Balance: 0. "Next year in Jerusalem?"`, 'error');
           updateStatus("BURNT LIKE PASSOVER MATZAH", 'dead');
         } else {
           const finalAmount = Math.floor(box.deposit * 2); // 2x multiplier
-          log(`🎉 MIRACLE! Balance: ${finalAmount.toLocaleString()} $JewExp. "Hineni!"`, 'success');
-          updateStatus(`ALIVE! ${finalAmount.toLocaleString()} $JewExp 💰`, 'alive');
+          log(`🎉 MIRACLE! Balance: ${finalAmount.toLocaleString()} $EXPJEW. "Hineni!"`, 'success');
+          updateStatus(`ALIVE! ${finalAmount.toLocaleString()} $EXPJEW 💰`, 'alive');
         }
       } catch (err) {
         log(`❌ "Oy vey!" Transaction failed. Did you anger the Solana gods?`, 'error');
